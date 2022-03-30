@@ -12,7 +12,8 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 })
 export class TaskItemComponent implements OnInit {
 
-  task:Task[]=TASKS;
+  task:Task[] = TASKS;
+  faTimes = faTimes;
   constructor() { }
   ngOnInit(): void {
   }
