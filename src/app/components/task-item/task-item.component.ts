@@ -1,6 +1,8 @@
 import { Component, OnInit  } from '@angular/core';
 import { Task } from '../../Task';
 import { TASKS } from '../../mock-tasks';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
+
 // import {TASK} from ''
 
 @Component({
