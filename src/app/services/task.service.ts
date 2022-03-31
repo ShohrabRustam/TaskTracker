@@ -14,10 +14,11 @@ import {Observable,of} from 'rxjs'
 export class TaskService {
 
   private apiUrl = "http://localhost:3000/tasks"
-  constructor() { }
+  constructor(private http:HttpClient) { }
 
   getTask():Observable<Task[]>{
-    const task = of(TASKS);
-    return task;
+    // const task = of(TASKS);
+    // return task;
+    return this.http.get<Task[]>(this.apiUrl);
   }
 }
